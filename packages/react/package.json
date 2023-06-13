@@ -1,0 +1,17 @@
+{
+  "name": "@ignite-ui/react",
+  "version": "1.0.0",
+  "main": "./build/index.js",
+  "module": "./build/index.mjs",
+  "types": "./build/index.d.ts",  
+  "license": "MIT",
+  "scripts": {
+    "build": "tsup --out-dir build src/index.ts --format esm,cjs --dts",
+    "dev": "tsup --out-dir build src/index.ts --format esm,cjs --dts --watch"
+  },
+  "devDependencies": {
+    "@ignite-ui/tokens": "*",
+    "tsup": "^6.7.0",
+    "typescript": "^5.1.3"
+  }
+}
