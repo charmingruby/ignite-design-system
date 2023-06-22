@@ -3,3 +3,7 @@ export * from "../src/components/Text"
 export * from "../src/components/Heading"
 export * from "../src/components/Avatar"
 export * from "../src/components/Button"
+export * from "../src/components/TextInput"
+export * from "../src/components/TextArea"
+export * from '../src/components/CheckBox'
+export * from "../src/components/Multistep"
