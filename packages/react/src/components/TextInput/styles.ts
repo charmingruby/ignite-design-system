@@ -1,4 +1,5 @@
 import { styled } from "../../styles";
+import { Multistep } from "../Multistep";
 
 export const TextInputContainer = styled('div', {
     backgroundColor: '$gray900',
@@ -50,3 +51,4 @@ export const Input = styled('input', {
         color: '$gray400'
     }
 })
+
