@@ -1,0 +1,2 @@
+import{A as t}from"./index.2497dee9.js";import"./index.e78dc6af.js";import"./iframe.65caeea0.js";import"./index.3fd980d6.js";import"./jsx-runtime.9d26c0b1.js";const p={title:"Data Display/Avatar",component:t,args:{src:"https://github.com/GBDev13.png",alt:"GB Dev"},argTypes:{src:{control:{type:"text"}}}},c={},e={args:{src:void 0}},m=["Primary","WithFallback"];export{c as Primary,e as WithFallback,m as __namedExportsOrder,p as default};
+//# sourceMappingURL=Avatar.stories.7cfa78ec.js.map
