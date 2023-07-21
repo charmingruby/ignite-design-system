@@ -1,5 +1,5 @@
-import { StoryObj, Meta } from '@storybook/react'
-import { Button, ButtonProps } from '@ignite-ui/react'
+import type { Meta, StoryObj } from '@storybook/react'
+import { Button, ButtonProps } from '@gb-ignite-ui/react'
 import { ArrowRight } from 'phosphor-react'
 
 export default {
@@ -9,10 +9,11 @@ export default {
     children: 'Send',
     variant: 'primary',
     size: 'md',
+    disabled: false,
   },
   argTypes: {
     variant: {
-      options: ['primary', 'secondary', 'terciary'],
+      options: ['primary', 'secondary', 'tertiary'],
       control: {
         type: 'inline-radio',
       },
@@ -32,7 +33,7 @@ export default {
       action: 'click',
     },
   },
-} as Meta
+} as Meta<ButtonProps>
 
 export const Primary: StoryObj<ButtonProps> = {}
 
@@ -43,9 +44,9 @@ export const Secondary: StoryObj<ButtonProps> = {
   },
 }
 
-export const Terciary: StoryObj<ButtonProps> = {
+export const Tertiary: StoryObj<ButtonProps> = {
   args: {
-    variant: 'terciary',
+    variant: 'tertiary',
     children: 'Cancel',
   },
 }
@@ -56,19 +57,19 @@ export const Small: StoryObj<ButtonProps> = {
   },
 }
 
-export const Disabled: StoryObj<ButtonProps> = {
-  args: {
-    disabled: true,
-  },
-}
-
 export const WithIcon: StoryObj<ButtonProps> = {
   args: {
     children: (
       <>
-        Next Step
-        <ArrowRight />
+        Próximo passo
+        <ArrowRight weight="bold" />
       </>
     ),
+  },
+}
+
+export const Disabled: StoryObj<ButtonProps> = {
+  args: {
+    disabled: true,
   },
 }

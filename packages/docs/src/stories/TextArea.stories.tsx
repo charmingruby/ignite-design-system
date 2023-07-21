@@ -1,12 +1,10 @@
-import { StoryObj, Meta } from '@storybook/react'
-import { Box, Text, TextArea, TextAreaProps } from '@ignite-ui/react'
+import type { Meta, StoryObj } from '@storybook/react'
+import { Box, Text, TextArea, TextAreaProps } from '@gb-ignite-ui/react'
 
 export default {
   title: 'Form/Text Area',
   component: TextArea,
-  args: {
-    placeholder: 'Type your name',
-  },
+  args: {},
   decorators: [
     (Story) => {
       return (
@@ -20,18 +18,16 @@ export default {
       )
     },
   ],
-} as Meta
+} as Meta<TextAreaProps>
 
-export const Primary: StoryObj<TextAreaProps> = {}
+export const Primary: StoryObj<TextAreaProps> = {
+  args: {
+    placeholder: 'Add any observations...',
+  },
+}
 
 export const Disabled: StoryObj<TextAreaProps> = {
   args: {
     disabled: true,
-  },
-}
-
-export const WithPrefix: StoryObj<TextAreaProps> = {
-  args: {
-    prefix: 'cal.com/',
   },
 }

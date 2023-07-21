@@ -1,13 +1,13 @@
-import { StoryObj, Meta } from '@storybook/react'
-import { Text, TextProps } from '@ignite-ui/react'
+import type { StoryObj, Meta } from '@storybook/react'
+import { Text, TextProps } from '@gb-ignite-ui/react'
 
 export default {
   title: 'Typography/Text',
   component: Text,
   args: {
-    size: 'md',
     children:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, aliquid atque. Beatae exercitationem eligendi eius, consequatur amet quidem vero blanditiis cum. Minima earum architecto autem accusantium dolore aperiam quibusdam veritatis!',
+      'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad laudantium, perferendis, animi blanditiis dolorum omnis sint consequuntur consectetur optio repudiandae tempore laboriosam aspernatur a sit hic ratione aliquid ea autem.',
+    size: 'md',
   },
   argTypes: {
     size: {

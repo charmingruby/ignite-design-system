@@ -1,4 +1,4 @@
-import { colors } from '@ignite-ui/tokens'
+import { colors } from '@gb-ignite-ui/tokens'
 import { getContrast } from 'polished'
 
 export function ColorsGrid() {
@@ -10,7 +10,7 @@ export function ColorsGrid() {
             display: 'flex',
             justifyContent: 'space-between',
             fontFamily: 'monospace',
-            color: getContrast(color, '#fff') < 3.5 ? '#000' : '#fff',
+            color: getContrast(color, '#FFF') < 3.5 ? '#000' : '#fff',
           }}
         >
           <strong>${key}</strong>

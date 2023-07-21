@@ -1,9 +1,9 @@
-import { StoryObj, Meta } from '@storybook/react'
-import { Box, Multistep, MultistepProps } from '@ignite-ui/react'
+import type { Meta, StoryObj } from '@storybook/react'
+import { Box, MultiStep, MultiStepProps } from '@gb-ignite-ui/react'
 
 export default {
-  title: 'Form/Multistep',
-  component: Multistep,
+  title: 'Form/Multi Step',
+  component: MultiStep,
   args: {
     size: 4,
     currentStep: 1,
@@ -20,11 +20,13 @@ export default {
       )
     },
   ],
-} as Meta
+} as Meta<MultiStepProps>
 
-export const Primary: StoryObj<MultistepProps> = {}
+export const Primary: StoryObj<MultiStepProps> = {
+  args: {},
+}
 
-export const Full: StoryObj<MultistepProps> = {
+export const Full: StoryObj<MultiStepProps> = {
   args: {
     currentStep: 4,
   },
